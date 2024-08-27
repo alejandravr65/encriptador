@@ -1,0 +1,145 @@
+*{
+    zoom:0;
+    background-color: #D8DFE8;
+    font-family:'Inter'; 
+    font-size: 16px;
+}
+
+main{
+    display:flex;
+}
+header{
+    margin-bottom: 2rem;
+    width:60%;
+}
+
+.logo{
+    padding-top: 2.5rem;
+    margin-left: 2.5rem;
+    width:7rem;
+    height: 3rem;
+
+}
+
+.seccion1{
+    margin-left:15%;
+}
+.text__area{
+    margin-top:2rem;
+    border:none;
+    color: #0a3871;
+    text-transform: lowercase;
+    font-size: 2rem;
+    font-weight:400;  
+    width:100%;
+    height: 680px;
+    outline:none;
+}
+
+::placeholder {
+    color:#0a3871
+}
+
+.seccion2{
+   
+    margin-left: 20%;
+    width:auto;
+    padding-right: 20%;
+}
+
+ .mensaje{
+    background-position: center;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-image:url(img/Muñeco.png) ;
+    border:none;
+    border-radius: 2rem;
+    color: #0a3871;
+    height: 43rem;
+    width: 20rem;
+    font-size: 2rem;
+    
+}
+
+.mensaje:focus{
+    outline:none;
+     }
+
+.botones{
+    display:flex;
+    flex-direction: column;
+}
+.botoncitos{
+    display:flex;
+    margin-top: 5px;
+}
+
+.boton__encriptar{
+    background-color: #0a3871;
+    border: 1px solid #0a3871;
+    border-radius: 1.5rem;
+    color:white;
+    height:4rem;
+    width: 20rem;
+    cursor:pointer;
+    font-size: 16px;
+}
+
+.boton__desencriptar{
+    background-color: #D8DFE8;
+    font-size: 1rem;
+    border: 1px solid #0a3871;
+    border-radius: 1.5rem;
+    color:#0a3871;
+    height:4.2rem;
+    width: 20.5rem;
+    margin-left: 1.5rem;
+    cursor:pointer
+    
+}
+
+.boton__copiar{
+    background-color: #0a3871;
+    border: 1px solid #0a3871;
+    border-radius: 1.5rem;
+    color:white;
+    height:4rem;
+    width: 20rem;
+    cursor:pointer;
+    font-size: 1rem;
+    margin-top: 2.9rem;
+}
+
+.indicaciones{
+display:flex;
+color: #495057;
+font-size: 1rem;
+gap:0.7rem;
+}
+
+@media  screen and (max-width:917px){
+    main{
+        flex-direction:column;
+        width:auto;
+    }
+
+    .botoncitos{
+        flex-direction: column;
+        gap:0.5rem;
+    }
+    
+    .boton__desencriptar{
+        margin-left:0;
+    }
+    .seccion2{
+        margin-left:15%;
+        margin-top:5rem;
+        margin-bottom:5rem
+    }
+
+    .mensaje{
+        background-image: none;
+        background-color: white;
+}
+
+}
